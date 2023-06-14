@@ -21,7 +21,7 @@ export const Navigation = () => {
         </ListItem>
 
         <ListItem>
-          <a>Pliicy</a>
+          <a>Policy</a>
         </ListItem>
 
         <ListItem>
