@@ -19,7 +19,6 @@ import theme from "./theme";
 import "./App.css";
 
 import heroImage from "./assets/people-connecting.jpg";
-import cafe from "./assets/cafe.jpg";
 
 const H2 = ({ children, ...otherProps }: TextProps) => {
   return (
