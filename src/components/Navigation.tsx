@@ -1,35 +1,39 @@
-import { Box, Stack, List, ListItem } from "@chakra-ui/react";
+import { Box, Stack, List, ListItem, Link } from "@chakra-ui/react";
 
 export const Navigation = () => {
   return (
     <Box as="nav">
       <Stack as={List} direction="row" spacing="8">
         <ListItem>
-          <a>Home</a>
+          <Link color="white">Home</Link>
         </ListItem>
 
         <ListItem>
-          <a>About us</a>
+          <Link color="white" href="#about-us">
+            About us
+          </Link>
         </ListItem>
 
         <ListItem>
-          <a>Service</a>
+          <Link color="white">Service</Link>
         </ListItem>
 
         <ListItem>
-          <a>Donate</a>
+          <Link color="white">Donate</Link>
         </ListItem>
 
         <ListItem>
-          <a>Policy</a>
+          <Link color="white">Policy</Link>
         </ListItem>
 
         <ListItem>
-          <a>Appointment</a>
+          <Link color="white">Appointment</Link>
         </ListItem>
 
         <ListItem>
-          <a href="#contact-us">Contact us</a>
+          <Link color="white" href="#contact-us">
+            Contact us
+          </Link>
         </ListItem>
       </Stack>
     </Box>

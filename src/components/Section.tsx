@@ -1,5 +1,5 @@
-import { Stack } from "@chakra-ui/react";
-import { ComponentProps, ReactNode } from "react";
+import { Stack, StackProps } from "@chakra-ui/react";
+import { ReactNode } from "react";
 
 export const Section = ({
   full = false,
@@ -8,10 +8,7 @@ export const Section = ({
 }: {
   full?: boolean;
   children?: ReactNode;
-} & Pick<
-  ComponentProps<typeof Stack>,
-  "padding" | "paddingX" | "paddingY"
->) => {
+} & StackProps) => {
   return (
     <Stack
       as="section"
