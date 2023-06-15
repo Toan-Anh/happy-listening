@@ -1,4 +1,4 @@
-import { Image, Stack, Text, VisuallyHidden } from "@chakra-ui/react";
+import { Image, Stack, VisuallyHidden } from "@chakra-ui/react";
 import { Navigation } from "./Navigation";
 
 import logo from "/happy-listening-logo.png";
