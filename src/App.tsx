@@ -26,7 +26,7 @@ import "./App.css";
 import heroImage from "./assets/people-connecting.jpg";
 import aboutUs from "./assets/people-talking.jpg";
 import coreValues from "./assets/cafe.jpg";
-import meetPeople from "./assets/dylan-ferreira-HJmxky8Fvmo-unsplash.jpg";
+import meetPeople from "./assets/phone.jpg";
 
 const H2 = ({ children, ...otherProps }: TextProps) => {
   return (
