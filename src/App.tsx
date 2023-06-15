@@ -26,7 +26,7 @@ import "./App.css";
 import heroImage from "./assets/people-connecting.jpg";
 import aboutUs from "./assets/people-talking.jpg";
 import coreValues from "./assets/cafe.jpg";
-import meetPeople from "./assets/phone.jpg";
+import meetPeople from "./assets/dylan-ferreira-HJmxky8Fvmo-unsplash.jpg";
 
 const H2 = ({ children, ...otherProps }: TextProps) => {
   return (
@@ -256,7 +256,11 @@ const Footer = () => {
           <li>
             <ListIcon as={CalendarIcon} />
             <strong>Booking:</strong>{" "}
-            <Link href="https://forms.gle/Z6v33n641Dwp5aQx5">
+            <Link
+              href="https://forms.gle/Z6v33n641Dwp5aQx5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               https://forms.gle/Z6v33n641Dwp5aQx5
             </Link>
           </li>

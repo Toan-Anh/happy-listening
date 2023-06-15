@@ -5,7 +5,9 @@ export const Navigation = () => {
     <Box as="nav">
       <Stack as={List} direction="row" spacing="8">
         <ListItem>
-          <Link color="white">Home</Link>
+          <Link color="white" href="/">
+            Home
+          </Link>
         </ListItem>
 
         <ListItem>
@@ -15,19 +17,32 @@ export const Navigation = () => {
         </ListItem>
 
         <ListItem>
-          <Link color="white">Service</Link>
+          <Link color="white" href="/">
+            Service
+          </Link>
         </ListItem>
 
         <ListItem>
-          <Link color="white">Donate</Link>
+          <Link color="white" href="/">
+            Donate
+          </Link>
         </ListItem>
 
         <ListItem>
-          <Link color="white">Policy</Link>
+          <Link color="white" href="/">
+            Policy
+          </Link>
         </ListItem>
 
         <ListItem>
-          <Link color="white">Appointment</Link>
+          <Link
+            color="white"
+            href="https://forms.gle/Z6v33n641Dwp5aQx5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Appointment
+          </Link>
         </ListItem>
 
         <ListItem>
