@@ -6,10 +6,15 @@ import {
   ChakraProvider,
   Grid,
   GridItem,
+  Link,
+  List,
+  ListIcon,
+  ListItem,
   Stack,
   Text,
   TextProps,
 } from "@chakra-ui/react";
+import { CalendarIcon, EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
 import { HappyListening } from "./components/HappyListening";
 import { Masthead } from "./components/Masthead";
@@ -19,6 +24,9 @@ import theme from "./theme";
 import "./App.css";
 
 import heroImage from "./assets/people-connecting.jpg";
+import aboutUs from "./assets/people-talking.jpg";
+import coreValues from "./assets/cafe.jpg";
+import meetPeople from "./assets/phone.jpg";
 
 const H2 = ({ children, ...otherProps }: TextProps) => {
   return (
@@ -33,7 +41,7 @@ const HeroImage = () => {
     <GridItem
       gridRowStart={1}
       gridColumnStart={1}
-      colSpan={4}
+      gridColumnEnd={-1}
       height="100%"
       position="relative"
     >
@@ -41,7 +49,7 @@ const HeroImage = () => {
         <Box
           as="img"
           src={heroImage}
-          alt="Two women camping next to a fire — Photo by Oleksandr Pidvalnyi on Pexels"
+          alt="Two women camping next to a fire"
           width="100%"
         />
       </AspectRatio>
@@ -95,89 +103,166 @@ const HeroContent = () => {
 
 const AboutUs = () => {
   return (
-    <Section
-      full
-      bgGradient="linear(to-r, brand.500 70%, whiteAlpha.100)"
-      color="white"
-    >
-      <Section>
-        <H2 id="about-us">About us</H2>
-        <p>
-          We live in a world where you can be surrounded by many people, but
-          still feel lonely, with nobody to turn to when things get rough.
-        </p>
+    <Grid templateColumns="7fr 3fr">
+      <GridItem
+        hideBelow="sm"
+        rowStart={1}
+        colEnd={-1}
+        height="100%"
+        backgroundImage={aboutUs}
+        backgroundSize="auto 100%"
+        backgroundPosition="right"
+        backgroundRepeat="no-repeat"
+      ></GridItem>
 
-        <p>
-          But being heard is an indispensable need of humans, but not everyone
-          has someone to talk to. At <HappyListening />, we aim to answer the
-          big question “How can we make being heard a reality for everyone?”
-        </p>
+      <GridItem rowStart={1} colStart={1} colEnd={-1}>
+        <Section
+          full
+          background={["brand.400", "unset"]}
+          bgGradient={[null, "linear(to-r, brand.400 80%, whiteAlpha.100)"]}
+          color="white"
+        >
+          <Section>
+            <H2 id="about-us">About us</H2>
+            <p>
+              We live in a world where you can be surrounded by many people, but
+              still feel lonely, with nobody to turn to when things get rough.
+            </p>
 
-        <p>
-          No matter who you are or what you're going through, you'll always be
-          heard and cared for. We work towards a world where all voices are
-          heard without judgment.
-        </p>
-      </Section>
-    </Section>
+            <p>
+              But being heard is an indispensable need of humans, but not
+              everyone has someone to talk to. At <HappyListening />, we aim to
+              answer the big question “How can we make being heard a reality for
+              everyone?”
+            </p>
+
+            <p>
+              No matter who you are or what you're going through, you'll always
+              be heard and cared for. We work towards a world where all voices
+              are heard without judgment.
+            </p>
+          </Section>
+        </Section>
+      </GridItem>
+    </Grid>
   );
 };
 
 const CoreValues = () => {
   return (
-    <Section
-      full
-      bgGradient="linear(to-l, brand.600 70%, whiteAlpha.100)"
-      color="white"
-      direction="row"
-      paddingX={0}
-      paddingY={0}
-    >
-      <Section>
-        <H2>Core values</H2>
-        <ul>
-          <li>
-            <strong>Devotion:</strong> <HappyListening /> never stops trying our
-            best to provide our customers with high quality services.
-          </li>
-          <li>
-            <strong>Listening and Understanding:</strong> <HappyListening />{" "}
-            always listens to every of our clients’ unique life experiences
-            while providing genuine support regardless of any gender, religion,
-            living standard, occupation, social class, etc.
-          </li>
-          <li>
-            <strong>Ethical Practice:</strong> <HappyListening /> strictly
-            follows ethical guidelines while constantly advancing our skills and
-            knowledge to provide the best service possible.
-          </li>
-          <li>
-            <strong>Absolute security:</strong> All your information is
-            confidential in accordance with the principle of practice.
-          </li>
-        </ul>
-      </Section>
-    </Section>
+    <Grid templateColumns="3fr 7fr">
+      <GridItem
+        hideBelow="sm"
+        rowStart={1}
+        colStart={1}
+        height="100%"
+        backgroundImage={coreValues}
+        backgroundSize="auto 100%"
+        backgroundPosition="left"
+        backgroundRepeat="no-repeat"
+      ></GridItem>
+
+      <GridItem rowStart={1} colStart={1} colEnd={-1}>
+        <Section
+          full
+          bgGradient="linear(to-l, brand.500 80%, whiteAlpha.100)"
+          color="white"
+          direction="row"
+          paddingX={0}
+          paddingY={0}
+        >
+          <Section>
+            <H2>Core values</H2>
+            <ul>
+              <li>
+                <strong>Devotion:</strong> <HappyListening /> never stops trying
+                our best to provide our customers with high quality services.
+              </li>
+              <li>
+                <strong>Listening and Understanding:</strong> <HappyListening />{" "}
+                always listens to every of our clients’ unique life experiences
+                while providing genuine support regardless of any gender,
+                religion, living standard, occupation, social class, etc.
+              </li>
+              <li>
+                <strong>Ethical Practice:</strong> <HappyListening /> strictly
+                follows ethical guidelines while constantly advancing our skills
+                and knowledge to provide the best service possible.
+              </li>
+              <li>
+                <strong>Absolute security:</strong> All your information is
+                confidential in accordance with the principle of practice.
+              </li>
+            </ul>
+          </Section>
+        </Section>
+      </GridItem>
+    </Grid>
   );
 };
 
 const MeetPeople = () => {
   return (
-    <Section
-      full
-      bgGradient="linear(to-r, brand.500 70%, whiteAlpha.100)"
-      color="white"
-    >
+    <Grid templateColumns="7fr 3fr">
+      <GridItem
+        hideBelow="sm"
+        rowStart={1}
+        colEnd={-1}
+        height="100%"
+        backgroundImage={meetPeople}
+        backgroundSize="auto 100%"
+        backgroundPosition="right"
+        backgroundRepeat="no-repeat"
+      ></GridItem>
+
+      <GridItem rowStart={1} colStart={1} colEnd={-1}>
+        <Section
+          full
+          bgGradient="linear(to-r, brand.400 80%, whiteAlpha.100)"
+          color="white"
+        >
+          <Section>
+            <H2>Meet people who understand</H2>
+            <p>
+              You can find support and friendship for many issues, like
+              depression, anxiety, relationships, LGBTQ+ and more. We have a
+              diverse portfolio of certified listeners who are willing to listen
+              to your stories without judgment.
+            </p>
+          </Section>
+        </Section>
+      </GridItem>
+    </Grid>
+  );
+};
+
+const Footer = () => {
+  return (
+    <Box as="footer" paddingY={8} background="brand.700" color="white">
       <Section>
-        <H2>Meet people who understand</H2>
-        <p>
-          You can find support and friendship for many issues, like depression,
-          anxiety, relationships, LGBTQ+ and more. We have a diverse portfolio
-          of certified listeners who are willing to listen to your stories
-          without judgment.
-        </p>
+        <H2 id="contact-us">Contact us</H2>
+        <List>
+          <ListItem>
+            <ListIcon as={PhoneIcon} />
+            <strong>Hotline:</strong> <Link href="tel:1800xxxx">1800xxxx</Link>
+          </ListItem>
+          <li>
+            <ListIcon as={EmailIcon} />
+            <strong>Email:</strong>{" "}
+            <Link href="mailto:info@happylistening.com">
+              info@happylistening.com
+            </Link>
+          </li>
+          <li>
+            <ListIcon as={CalendarIcon} />
+            <strong>Booking:</strong>{" "}
+            <Link href="https://forms.gle/Z6v33n641Dwp5aQx5">
+              https://forms.gle/Z6v33n641Dwp5aQx5
+            </Link>
+          </li>
+        </List>
       </Section>
-    </Section>
+    </Box>
   );
 };
 
@@ -187,33 +272,16 @@ function App() {
       <Box as="main" width="100%" minHeight="100vh">
         <Masthead />
 
-        <Section full padding={0}>
-          <Grid templateColumns="1fr minmax(auto, 1280px) 1fr">
-            <HeroImage />
-            <HeroContent />
-          </Grid>
-        </Section>
+        <Grid templateColumns="1fr minmax(auto, 1280px) 1fr">
+          <HeroImage />
+          <HeroContent />
+        </Grid>
 
         <AboutUs />
         <CoreValues />
         <MeetPeople />
 
-        <Box
-          as="footer"
-          paddingY={8}
-          background="brand.700"
-          color="white"
-          // bgGradient="linear(white 0%, yellow.100 25%, yellow.300, orange.400)"
-        >
-          <Section>
-            <H2 id="contact-us">Contact us</H2>
-            <ul>
-              <li>Hotline: 18001463</li>
-              <li>Email: info.happylistening@gmail.com</li>
-              <li>Booking: https://forms.gle/Z6v33n641Dwp5aQx5</li>
-            </ul>
-          </Section>
-        </Box>
+        <Footer />
       </Box>
     </ChakraProvider>
   );

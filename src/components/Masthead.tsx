@@ -13,8 +13,7 @@ export const Masthead = () => {
       alignItems="center"
       position="sticky"
       top={0}
-      boxShadow="0px 2px 4px #757575"
-      background="brand.500"
+      background="brand.600"
       zIndex={100}
     >
       <Image src={logo} alt="Happy Listening Logo" height={24} />
