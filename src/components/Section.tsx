@@ -13,7 +13,7 @@ export const Section = ({
     <Stack
       as="section"
       paddingX="8"
-      paddingY="6"
+      paddingY="8"
       maxWidth={full ? "100%" : "1280px"}
       margin="0 auto"
       spacing="4"

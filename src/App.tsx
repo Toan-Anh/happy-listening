@@ -115,33 +115,32 @@ const AboutUs = () => {
         backgroundRepeat="no-repeat"
       ></GridItem>
 
-      <GridItem rowStart={1} colStart={1} colEnd={-1}>
-        <Section
-          full
-          background={["brand.400", "unset"]}
-          bgGradient={[null, "linear(to-r, brand.400 80%, whiteAlpha.100)"]}
-          color="white"
-        >
-          <Section>
-            <H2 id="about-us">About us</H2>
-            <p>
-              We live in a world where you can be surrounded by many people, but
-              still feel lonely, with nobody to turn to when things get rough.
-            </p>
+      <GridItem
+        rowStart={1}
+        colStart={1}
+        colEnd={-1}
+        background={["brand.400", "unset"]}
+        bgGradient={[null, "linear(to-r, brand.400 80%, whiteAlpha.100)"]}
+        color="white"
+      >
+        <Section>
+          <H2 id="about-us">About us</H2>
+          <p>
+            We live in a world where you can be surrounded by many people, but
+            still feel lonely, with nobody to turn to when things get rough.
+          </p>
 
-            <p>
-              But being heard is an indispensable need of humans, but not
-              everyone has someone to talk to. At <HappyListening />, we aim to
-              answer the big question “How can we make being heard a reality for
-              everyone?”
-            </p>
+          <p>
+            But being heard is an indispensable need of humans, but not everyone
+            has someone to talk to. At <HappyListening />, we aim to answer the
+            big question “How can we make being heard a reality for everyone?”
+          </p>
 
-            <p>
-              No matter who you are or what you're going through, you'll always
-              be heard and cared for. We work towards a world where all voices
-              are heard without judgment.
-            </p>
-          </Section>
+          <p>
+            No matter who you are or what you're going through, you'll always be
+            heard and cared for. We work towards a world where all voices are
+            heard without judgment.
+          </p>
         </Section>
       </GridItem>
     </Grid>
@@ -162,39 +161,37 @@ const CoreValues = () => {
         backgroundRepeat="no-repeat"
       ></GridItem>
 
-      <GridItem rowStart={1} colStart={1} colEnd={-1}>
-        <Section
-          full
-          bgGradient="linear(to-l, brand.500 80%, whiteAlpha.100)"
-          color="white"
-          direction="row"
-          paddingX={0}
-          paddingY={0}
-        >
-          <Section>
-            <H2>Core values</H2>
-            <ul>
-              <li>
-                <strong>Devotion:</strong> <HappyListening /> never stops trying
-                our best to provide our customers with high quality services.
-              </li>
-              <li>
-                <strong>Listening and Understanding:</strong> <HappyListening />{" "}
-                always listens to every of our clients’ unique life experiences
-                while providing genuine support regardless of any gender,
-                religion, living standard, occupation, social class, etc.
-              </li>
-              <li>
-                <strong>Ethical Practice:</strong> <HappyListening /> strictly
-                follows ethical guidelines while constantly advancing our skills
-                and knowledge to provide the best service possible.
-              </li>
-              <li>
-                <strong>Absolute security:</strong> All your information is
-                confidential in accordance with the principle of practice.
-              </li>
-            </ul>
-          </Section>
+      <GridItem
+        rowStart={1}
+        colStart={1}
+        colEnd={-1}
+        background={["brand.500", "unset"]}
+        bgGradient={[null, "linear(to-l, brand.500 80%, whiteAlpha.100)"]}
+        color="white"
+      >
+        <Section>
+          <H2>Core values</H2>
+          <ul>
+            <li>
+              <strong>Devotion:</strong> <HappyListening /> never stops trying
+              our best to provide our customers with high quality services.
+            </li>
+            <li>
+              <strong>Listening and Understanding:</strong> <HappyListening />{" "}
+              always listens to every of our clients’ unique life experiences
+              while providing genuine support regardless of any gender,
+              religion, living standard, occupation, social class, etc.
+            </li>
+            <li>
+              <strong>Ethical Practice:</strong> <HappyListening /> strictly
+              follows ethical guidelines while constantly advancing our skills
+              and knowledge to provide the best service possible.
+            </li>
+            <li>
+              <strong>Absolute security:</strong> All your information is
+              confidential in accordance with the principle of practice.
+            </li>
+          </ul>
         </Section>
       </GridItem>
     </Grid>
@@ -215,21 +212,22 @@ const MeetPeople = () => {
         backgroundRepeat="no-repeat"
       ></GridItem>
 
-      <GridItem rowStart={1} colStart={1} colEnd={-1}>
-        <Section
-          full
-          bgGradient="linear(to-r, brand.400 80%, whiteAlpha.100)"
-          color="white"
-        >
-          <Section>
-            <H2>Meet people who understand</H2>
-            <p>
-              You can find support and friendship for many issues, like
-              depression, anxiety, relationships, LGBTQ+ and more. We have a
-              diverse portfolio of certified listeners who are willing to listen
-              to your stories without judgment.
-            </p>
-          </Section>
+      <GridItem
+        rowStart={1}
+        colStart={1}
+        colEnd={-1}
+        background={["brand.400", "unset"]}
+        bgGradient={[null, "linear(to-r, brand.400 85%, whiteAlpha.100)"]}
+        color="white"
+      >
+        <Section>
+          <H2>Meet people who understand</H2>
+          <p>
+            You can find support and friendship for many issues, like
+            depression, anxiety, relationships, LGBTQ+ and more. We have a
+            diverse portfolio of certified listeners who are willing to listen
+            to your stories without judgment.
+          </p>
         </Section>
       </GridItem>
     </Grid>
