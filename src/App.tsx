@@ -13,6 +13,7 @@ import {
   Stack,
   Text,
   TextProps,
+  useToken,
 } from "@chakra-ui/react";
 import { CalendarIcon, EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
@@ -67,6 +68,7 @@ const HeroImage = () => {
 };
 
 const HeroContent = () => {
+  const [blackAlpha500] = useToken("colors", ["blackAlpha.700"]);
   return (
     <GridItem gridRowStart={1} gridColumnStart={2} zIndex={1} display="flex">
       <Stack
@@ -76,10 +78,14 @@ const HeroContent = () => {
         justifyContent="center"
         spacing="4"
       >
-        <H2 fontSize="4xl" color="white">
+        <H2
+          fontSize="4xl"
+          color="white"
+          textShadow={`0px 0px 2px ${blackAlpha500}`}
+        >
           Welcome to Happy Listening
         </H2>
-        <Text as="p" color="white">
+        <Text as="p" color="white" textShadow={`0px 0px 2px ${blackAlpha500}`}>
           Happy Listening connects you to caring listeners for emotional
           support.
         </Text>
