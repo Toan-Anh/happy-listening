@@ -55,7 +55,7 @@ const HeroImage = () => {
       </AspectRatio>
       <Box
         position="absolute"
-        bgGradient="linear(to-r, blackAlpha.700, blackAlpha.400 25%)"
+        bgGradient="linear(to-r, blackAlpha.700, blackAlpha.400 45%)"
         top={0}
         left={0}
         right={0}
