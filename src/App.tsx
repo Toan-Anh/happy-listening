@@ -121,9 +121,9 @@ const AboutUs = () => {
         colEnd={-1}
         background={["brand.400", "unset"]}
         bgGradient={[null, "linear(to-r, brand.400 80%, whiteAlpha.100)"]}
-        color="white"
+        color="whiteAlpha.800"
       >
-        <Section>
+        <Section paddingEnd={[8, "20%"]}>
           <H2 id="about-us">About us</H2>
           <p>
             We live in a world where you can be surrounded by many people, but
@@ -167,9 +167,9 @@ const CoreValues = () => {
         colEnd={-1}
         background={["brand.500", "unset"]}
         bgGradient={[null, "linear(to-l, brand.500 80%, whiteAlpha.100)"]}
-        color="white"
+        color="whiteAlpha.800"
       >
-        <Section>
+        <Section paddingStart={[8, "20%"]}>
           <H2>Core values</H2>
           <ul>
             <li>
@@ -217,10 +217,10 @@ const MeetPeople = () => {
         colStart={1}
         colEnd={-1}
         background={["brand.400", "unset"]}
-        bgGradient={[null, "linear(to-r, brand.400 85%, whiteAlpha.100)"]}
-        color="white"
+        bgGradient={[null, "linear(to-r, brand.400 82%, whiteAlpha.100)"]}
+        color="whiteAlpha.800"
       >
-        <Section>
+        <Section paddingEnd={[8, "20%"]}>
           <H2>Meet people who understand</H2>
           <p>
             You can find support and friendship for many issues, like
@@ -236,7 +236,7 @@ const MeetPeople = () => {
 
 const Footer = () => {
   return (
-    <Box as="footer" paddingY={8} background="brand.700" color="white">
+    <Box as="footer" background="brand.700" color="white">
       <Section>
         <H2 id="contact-us">Contact us</H2>
         <List>
